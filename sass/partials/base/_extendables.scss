@@ -11,14 +11,11 @@
 }
 
 %visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  @include visuallyhidden();
+}
+
+%visuallyshow {
+  @include visuallyshow();
 }
 
 //
@@ -51,7 +48,7 @@
 // Icons
 //
 %icon {
-  font-family: 'icon'; //declared in the typography partial
+  font-family: '#{$c-font-name}';  // font name is defined in the variables partial
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -59,4 +56,9 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   speak: none;
+}
+
+%menu-icon {
+  @extend %icon;
+  content: "\e601";
 }

@@ -1,26 +1,35 @@
-Chardonnay
-==========
+# RocketBooster
 
-Starter theme for Drupal 8
+> Drupal 8 Starter Theme for the NASA Goddard Library.
 
-To Use
-======
+## To Use
 
-* Copy files to new theme folder
-  - do not copy the directory so we don't accidentally bring over the git repo
-* Rename chardonnay.info.yml
-* Rename chardonnay-functions.js
-* Search and replace chardonnay with your theme name
+- Copy files to new theme folder
+	- do not copy the directory so we don't accidentally bring over the git repo
+- Rename rocketbooster.info
+- Search and replace rocketbooster with your theme name
+- Rename the theme folder to your custom theme name
+  - theme names should get a year suffix
+    - For example: sitename2015
 
-* You will need Node, Grunt, and Bundler
-* From the command line, cd into the folder
-* Run "sudo npm install"
-* Run "bundle install"
-* Run "grunt watch"
-* To stop watching, use Ctrl+C
+---
 
-Random Notes
-============
+-  You will need Node (see installation instructions here: https://nodejs.org) and Gulp (see installation instructions here: http://gulpjs.com/)
+-  From the command line, cd into your new theme folder
+-  Run "sudo npm install"
+-  Run "sudo npm update caniuse-db"
+-  Run "gulp"
+-  To stop watching, use Ctrl+C
 
-* Common Modernizr tests: mediaqueries (non-core), touch, rgba, csstransforms (2d), svg, plus printshiv
-* Frequently used Modernizr tests: csscalc (non-core), cssanimations, csstransitions
+## Notes
+
+### History
+
+RocketBooster was started as a Sass starter theme by Abby Milberg at RepEquity. It was made open source and placed on github under the title of "Boom". It was updated for Drupal 8 and renamed "Chardonnay". It was then expanded by Mitchell Shelton and brought to the NASA Goddard Library.
+
+### To do
+
+- Flexbox (IE11 fixes)
+- SVG Icons
+- Review/Update Mixins and Extendables
+- Review overall structure for Classy integration and Drupal 8 best practices

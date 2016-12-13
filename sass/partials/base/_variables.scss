@@ -1,6 +1,8 @@
 // Colors
 $c-black: #000000;
 $c-white: #ffffff;
+$c-off-black: #333333;
+$c-off-white: #efefef;
 
 // Base Font Size
 $base-font-size: 16;
@@ -19,3 +21,6 @@ $bp-med: px-to-em(1024);
 $max-stage-width: 1024;
 
 $no-query: '.no-mediaqueries';
+
+// Define the icon font name
+$c-font-name: 'rocketbooster-icons';

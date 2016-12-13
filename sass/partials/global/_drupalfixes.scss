@@ -1,0 +1,80 @@
+//admin menu links font weight reset and z-indexing
+#admin-menu {
+  z-index: 9999;
+  line-height: 1.4;
+
+  a {
+    line-height: 1.4;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  input {
+    height: 16px;
+  }
+}
+
+.tabs {
+  @extend %clearfix;
+  padding: 0;
+  border-bottom: solid 2px #999;
+  margin-bottom: 1em;
+  border-bottom: 1px solid;
+
+  li {
+    float: left;
+    margin: 0 2px 0 0;
+    list-style-type: none;
+    list-style-image: none;
+    line-height: 1.4;
+    padding-left: 0;
+
+    a {
+      display: block;
+      padding: 0.5em 1em;
+      background-color: #999;
+      color: $c-white;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background-color: #666;
+      }
+    } //a
+  } //li
+} //tabs
+
+.pager {
+  @include fontsize(16);
+  @extend %clearfix;
+  display: block;
+  clear: both;
+  padding: 0.5em 0;
+  border-top: 1px solid $c-black;
+  border-bottom: 1px solid $c-black;
+  margin: 2em auto;
+  text-align: center;
+  width: 100%;
+
+  .pager-item,
+  .pager-previous,
+  .pager-current,
+  .pager-first,
+  .pager-next,
+  .pager-last,
+  .pager-ellipsis {
+    display: inline;
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0 1em;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    } //a
+
+  } //li
+} //pager

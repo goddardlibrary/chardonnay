@@ -1,0 +1,15 @@
+name: RocketBooster
+type: theme
+description: 'Drupal 8 Starter Theme for the NASA Goddard Library.'
+package: custom
+core: 8.x
+# Base theme
+base theme: classy
+# Libraries
+libraries:
+  - rocketbooster/base
+# Regions
+regions:
+  header: Header
+  content: Content
+  footer: Footer
