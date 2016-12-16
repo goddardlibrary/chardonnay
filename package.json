@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git://github.com:goddardlibrary/rocketbooster.git"
   },
-  "author": "Mitchell Shelton",
+  "author": "NASA Goddard Library",
   "license": "ISC",
   "devDependencies": {
     "gulp": "~3.9.1",
@@ -19,14 +19,12 @@
     "gulp-sass": "~2.3.2",
     "jshint": "~2.9.4",
     "gulp-jshint": "~2.0.2",
-    "gulp-livereload": "~3.8.0",
     "browserify": "~13.1.1",
     "babelify": "~7.3.0",
     "gulp-notify": "~2.2.0",
     "vinyl-source-stream": "~1.1.0",
     "gulp-util": "~3.0.7",
     "yargs": "~6.3.0",
-    "express": "~4.14.0",
     "vinyl-transform": "~1.0.0",
     "stream-browserify": "~2.0.1",
     "gulp-concat": "~2.6.0"

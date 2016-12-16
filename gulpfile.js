@@ -15,13 +15,6 @@ var gutil = require('gulp-util');
 var yargs = require('yargs');
 var concat = require('gulp-concat');
 
-var runExpress = function() {
-  var express = require('express');
-  var app = express();
-  app.use(express.static('sass'));
-  app.listen(4000);
-};
-
 // Compile Sass, run autoprefixer, and create sourcemaps
 gulp.task('styles', function () {
   return gulp.src('sass/**/*.scss')
@@ -72,7 +65,6 @@ gulp.task('watch', function() {
   gulp.watch('js/es6/*.js', ['concat']);
   gulp.watch('js/es6/*.js', ['browserify']);
 
-  runExpress();
 });
 
 // Default task
